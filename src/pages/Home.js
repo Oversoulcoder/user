@@ -347,12 +347,23 @@ const Home = () => {
       <section className="blog-wrapper py5 home-wrapper-2">
         <div className="container-xxl">
           <div className="row">
-            <div className="col-12"></div>
-            <h3 className="section-heading">Our Latest Blog</h3>
-            <BlogCard />
-            <BlogCard />
-            <BlogCard />
-            <BlogCard />
+            <div className="col-12">
+              <h3 className="section-heading">Our Latest Blog</h3>
+            </div>
+            <div className="row">
+              <div className="col-3">
+                <BlogCard />
+              </div>
+              <div className="col-3">
+                <BlogCard />
+              </div>
+              <div className="col-3">
+                <BlogCard />
+              </div>
+              <div className="col-3">
+                <BlogCard />
+              </div>
+            </div>
           </div>
         </div>
       </section>

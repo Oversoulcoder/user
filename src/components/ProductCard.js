@@ -43,6 +43,13 @@ const ProductCard = (props) => {
               edit={false}
               activeColor="#ffd700"
             />
+            <p className={`description`}>
+              Introducing our cutting-edge Smartwatch, a fusion of style and
+              technology designed to elevate your everyday lifestyle. Packed
+              with innovative features and sleek aesthetics, this smart
+              companion seamlessly integrates into your daily routine, keeping
+              you connected, informed, and motivated.
+            </p>
             <p className="price">Php 500.00</p>
           </div>
           <div className="action-bar position-absolute">
