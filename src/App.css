@@ -464,3 +464,23 @@ footer .input-group-text {
 .contact-inner-wrapper ul {
   list-style: none;
 }
+.contact-inner-wrapper address,
+.contact-inner-wrapper a,
+.contact-inner-wrapper p {
+  color: var(--color-777777);
+}
+
+/* Compare Product Page */
+
+.compare-product-card {
+  padding: 20px 15px;
+  background-color: white;
+  border-radius: 10px;
+}
+.compare-product-card .cross {
+  top: 15px;
+  right: 15px;
+  width: 25px;
+  padding: 3px;
+  cursor: pointer;
+}

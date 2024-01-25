@@ -2,6 +2,9 @@ import React from "react";
 import BreadCrumb from "../components/BreadCrumb.js";
 import Meta from "../components/Meta.js";
 import { FaHome } from "react-icons/fa";
+import { BiSolidPhoneCall } from "react-icons/bi";
+import { MdEmail } from "react-icons/md";
+import { FaInfoCircle } from "react-icons/fa";
 const Contact = () => {
   return (
     <>
@@ -63,19 +66,33 @@ const Contact = () => {
                   </form>
                 </div>
                 <div>
-                  <h3 className="contact-title">Get in touch with us</h3>
+                  <h3 className="contact-title mb-4">Get in touch with us</h3>
+                  <div>
+                    <ul className="ps-0">
+                      <li className="mb-3 d-flex gap-15 align-items-center">
+                        <FaHome className="fs-5" />
+                        <address className="mb-0">
+                          7XRM+XCQ, Fuentes Rd, Pasag, Lapu-Lapu City, 6015
+                          Cebu.
+                        </address>
+                      </li>
+                      <li className="mb-3 d-flex gap-15 align-items-center">
+                        <BiSolidPhoneCall className="fs-5" />
+                        <a href="tel: +639231158063">+639231158063</a>
+                      </li>
+                      <li className="mb-3 d-flex gap-15 align-items-center">
+                        <MdEmail className="fs-5" />
+                        <a href="mailto:michaeladlawan@gmail.com">
+                          michaeladlawan@gmail.com
+                        </a>
+                      </li>
+                      <li className="mb-3 d-flex gap-15 align-items-center">
+                        <FaInfoCircle className="fs-5" />
+                        <p className="mb-0">Monday to Friday 10 AM ~ 8PM</p>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
-                <ul className="ps-0">
-                  <li>
-                    <FaHome />
-                  </li>
-                  <li>
-                    <img src="images/" alt="" />
-                  </li>
-                  <li>
-                    <img src="images/" alt="" />
-                  </li>
-                </ul>
               </div>
             </div>
           </div>
