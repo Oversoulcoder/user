@@ -20,7 +20,7 @@ const BlogCard = () => {
           realm of VR headgear, exploring its features, applications, and the
           unparalleled experiences it brings to users.
         </p>
-        <Link to="/" className="button">
+        <Link to="/blog/:id" className="button">
           Read More
         </Link>
       </div>
