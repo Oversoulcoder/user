@@ -4,12 +4,14 @@ import Meta from "../components/Meta.js";
 import ProductCard from "../components/ProductCard.js";
 import ReactStars from "react-rating-stars-component";
 import ReactImageZoom from "react-image-zoom";
-
+import Color from "../components/Color.js";
+import { FaCodeCompare } from "react-icons/fa6";
+import { FaHeart } from "react-icons/fa";
 const SingleProduct = () => {
   const props = {
     width: 400,
-    height: 500,
-    zoomWidth: 500,
+    height: 600,
+    zoomWidth: 600,
     img: "https://images.unsplash.com/photo-1524805444758-089113d48a6d?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c3dpc3MlMjB3YXRjaHxlbnwwfHwwfHx8MA%3D%3D",
   };
   const [orderedProduct, setorderedProduct] = useState(true);
@@ -76,15 +78,95 @@ const SingleProduct = () => {
                       edit={false}
                       activeColor="#ffd700"
                     />
-                    <p className="mb-0">(2 Reviews)</p>
+                    <p className="mb-0 t-review">(2 Reviews)</p>
                   </div>
-                  <a href="#review">Write a Review</a>
+                  <a className="review-btn" href="#review">
+                    Write a Review
+                  </a>
                 </div>
-                <div className="border-bottom">
-                  <div></div>
-                  <div></div>
-                  <div></div>
-                  <div></div>
+                <div className="border-bottom py-3">
+                  <div className="d-flex gap-10 align-items-center my-2">
+                    <h3 className="product-heading">Type :</h3>
+                    <p className="product-data">Watch</p>
+                  </div>
+                  <div className="d-flex gap-10 align-items-center my-2">
+                    <h3 className="product-heading">Brand :</h3>
+                    <p className="product-data">Swiss</p>
+                  </div>
+                  <div className="d-flex gap-10 align-items-center my-2">
+                    <h3 className="product-heading">Category :</h3>
+                    <p className="product-data">Watch</p>
+                  </div>
+                  <div className="d-flex gap-10 align-items-center my-2">
+                    <h3 className="product-heading">Tags :</h3>
+                    <p className="product-data">Watch</p>
+                  </div>
+                  <div className="d-flex gap-10 align-items-center my-2">
+                    <h3 className="product-heading">Availability :</h3>
+                    <p className="product-data">In Stock</p>
+                  </div>
+                  <div className="d-flex gap-10 flex-column mt-2 mb-3">
+                    <h3 className="product-heading">Size :</h3>
+                    <div className="d-flex flex-wrap gap-15">
+                      <spam className="badge border border-1 bg-white text-dark border-secondary">
+                        S
+                      </spam>
+                      <spam className="badge border border-1 bg-white text-dark border-secondary">
+                        M
+                      </spam>
+                      <spam className="badge border border-1 bg-white text-dark border-secondary">
+                        L
+                      </spam>
+                      <spam className="badge border border-1 bg-white text-dark border-secondary">
+                        XL
+                      </spam>
+                      <spam className="badge border border-1 bg-white text-dark border-secondary">
+                        XXL
+                      </spam>
+                    </div>
+                  </div>
+                  <div className="d-flex gap-10 flex-column mt-2 mb-3">
+                    <h3 className="product-heading">Color :</h3>
+                    <Color />
+                  </div>
+                  <div className="d-flex align-items-center gap-15 flex-row mt-2 mb-3">
+                    <h3 className="product-heading">Quantity :</h3>
+                    <div className="">
+                      <input
+                        type="number"
+                        name=""
+                        min={1}
+                        max={10}
+                        className="form-control"
+                        style={{ width: "70px" }}
+                        id=""
+                      />
+                    </div>
+                    <div className="d-flex align-items-center gap-30 ms-5">
+                      <button className="button border-0" type="submit">
+                        Add To Cart
+                      </button>
+                      <button className="button signup">Buy It Now</button>
+                    </div>
+                  </div>
+                  <div className="d-flex align-items-center gap-15">
+                    <div>
+                      <a href="">
+                        <FaCodeCompare className="fs-5 me-2" />
+                        Add To Compare
+                      </a>
+                    </div>
+                    <div>
+                      <a href="">
+                        <FaHeart className="fs-5 me-2" />
+                        Add To Wishlist
+                      </a>
+                    </div>
+                  </div>
+                  <div className="d-flex gap-10 align-items-center my-2">
+                    <h3 className="product-heading">Type :</h3>
+                    <p className="product-data">Watch</p>
+                  </div>
                 </div>
               </div>
             </div>
